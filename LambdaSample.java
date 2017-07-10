@@ -14,7 +14,8 @@ public class LambdaSample {
 		System.out.println(list.stream()
 		.filter(value -> value>3)
 		.filter(value -> value%2==0)
-		.mapToInt(value->value)
+		.mapToDouble(value->value*1.5)
+		//.mapToInt(value->value)
 		.sum());
 		
 		//.forEach(System.out::println);
